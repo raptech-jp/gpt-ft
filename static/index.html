@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Tuning Dataset Creator</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form action="/" method="post">
+        <label><input type="radio" name="role_1" value="system">system</label>
+        <label><input type="radio" name="role_1" value="assistant">assistant</label>
+        <label><input type="radio" name="role_1" value="user">user</label>
+        <label><textarea name="text_1" cols="50" rows="10"></textarea></label>
+        <br>
+        <label><input type="radio" name="role_2" value="system">system</label>
+        <label><input type="radio" name="role_2" value="assistant">assistant</label>
+        <label><input type="radio" name="role_2" value="user">user</label>
+        <label><textarea name="text_2" cols="50" rows="10"></textarea></label>
+        <button type="button" onclick="saveData()">Save</button>
+        <button type="button" onclick="saveDataAsJSONL()">Save as JSONL</button>
+    </form>
+</body>
+</html>
