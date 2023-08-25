@@ -11,7 +11,7 @@ function saveData() {
         return;
     }
 
-    contents.push({ "message":[{ "role": role1Selected.value, content: text1Value },{ "role": role2Selected.value, content: text2Value }]});
+    contents.push({ "messages":[{ "role": role1Selected.value, content: text1Value },{ "role": role2Selected.value, content: text2Value }]});
     console.log('保存されたメッセージ:', contents);
 
     document.querySelector('form').reset();
