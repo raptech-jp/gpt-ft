@@ -30,7 +30,7 @@ const querystring = __importStar(require("querystring"));
 const port = 5000;
 const server = http.createServer((request, response) => {
     if (request.method === 'GET') {
-        const filePath = path.join(__dirname, 'static', 'index.html');
+        const filePath = path.join(__dirname, 'docs', 'index.html');
         fs.readFile(filePath, 'utf-8', (error, data) => {
             if (error) {
                 response.writeHead(500, { 'Content-Type': 'text/plain' });
